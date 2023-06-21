@@ -1,0 +1,45 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe D:\code\electron-learning\node_modules\.store\yarn@1.22.19\node_modules\yarn\bin\yarn.js add electron-squirrel-startup
+
+PATH: 
+  D:\code\electron-learning\node_modules\.bin;D:\code\electron-learning\node_modules\.bin;D:\code\node_modules\.bin;D:\node_modules\.bin;C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;D:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;"C:\Program Files\Java\jdk-11.0.2\bin;C:\Program Files\Java\jdk-11.0.2\jre\bin";C:\apache-maven-3.8.8\bin;D:\nodeJs\node_global\node_modules;D:\java\Microsoft VS Code\bin;C:\Program Files\Java\jdk-11.0.2\bin;C:\Program Files (x86)\Git\cmd;C:\Program Files\Redis\;C:\Program Files\nodejs\;C:\Program Files\Bandizip\;C:\Program Files\Go\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\15590\AppData\Local\Microsoft\WindowsApps;D:\nodeJs\node_global;C:\Program Files\JetBrains\IntelliJ IDEA 2022.2.5\bin;;D:\Program Files\Microsoft VS Code\bin;C:\Users\15590\AppData\Roaming\npm;C:\Users\15590\go\bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\15590\AppData\Local\Yarn\Cache\v6\npm-ms-2.0.0-5608aeadfc00be6c2901df5f9861788de0d597c8-integrity\node_modules\ms\license.md' -> 'D:\code\electron-learning\node_modules\electron-squirrel-startup\node_modules\ms\license.md'
+
+npm manifest: 
+  {
+    "name": "electron-learning",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "electron-forge start",
+      "package": "electron-forge package",
+      "make": "electron-forge make"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "electron": "^25.1.1"
+    },
+    "dependencies": {
+      "electron-squirrel-startup": "^1.0.0",
+      "yarn": "^1.22.19"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

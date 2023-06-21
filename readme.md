@@ -135,3 +135,40 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 ### 打包发布
+
+-----
+
+
+将 Electron Forge 添加到您应用的开发依赖中，并使用其"import"命令设置 Forge 的脚手架：
+
+```sh
+cnpm install --save-dev @electron-forge/cli
+npx electron-forge import #有点慢要配置一个进行
+```
+
+使用 Forge 的 `make` 命令来创建可分发的应用程序：
+
+```
+npm run make
+```
+
+
+
+####  npx electron-forge import 配置
+
+[Electron](https://so.csdn.net/so/search?q=Electron&spm=1001.2101.3001.7020)的依赖包下载失败，其下载地址在国外，所以依赖没有下载成功。（**仅仅配置 阿里云的registry是没有用的**）
+
+解决办法：
+配置ELECTRON_MIRROR
+
+#### 解决的方法就是在~/.npmrc里做如下设置，
+
+> ```
+> npm config list #可以查看.npmrc 位置
+> ```
+>
+> electron_mirror="https://npm.taobao.org/mirrors/electron/"
+
+#### 如果您使用的是yarn，请将 ~/.npmrc里添加以下配置
+
+ELECTRON_MIRROR "https://npm.taobao.org/mirrors/electron/"
