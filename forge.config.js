@@ -1,17 +1,15 @@
 module.exports = {
   packagerConfig: {
     asar: true,
-    icon: 'icon',
-
+    icon:'icon'
+ 
   },
   rebuildConfig: {},
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
       config: {
-        iconUrl: 'https://github.com/dice2o/BingGPT/raw/main/icon.ico',
-        setupIcon: 'icon.ico'
-
+        setupIcon: './icons/app.ico'
       }
     },
     {

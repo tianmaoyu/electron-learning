@@ -6,10 +6,7 @@
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make-win32": "electron-forge make --platform=win32 --arch=x64",
-    "make-macOS": "electron-forge make --platform=darwin",
-    "make-linux": "electron-forge make --platform=linux"
- 
+    "make": "electron-forge make"
   },
   "author": "eric",
   "license": "ISC",

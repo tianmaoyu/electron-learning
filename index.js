@@ -8,7 +8,7 @@ const createWindow = () => {
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
         },
-        icon:path.join(__dirname, '/resources/assets/icon/icon_32x32@2x.png')
+        icon:path.join(__dirname, 'icon_128x128.png')
     })
     mainWindow.loadFile('index.html')
 }
