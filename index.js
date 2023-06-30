@@ -7,7 +7,8 @@ const createWindow = () => {
         height: 600,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
-        }
+        },
+        icon:path.join(__dirname, '/resources/assets/icon/icon_32x32@2x.png')
     })
     mainWindow.loadFile('index.html')
 }

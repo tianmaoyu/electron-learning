@@ -9,6 +9,7 @@
     "make-win32": "electron-forge make --platform=win32 --arch=x64",
     "make-macOS": "electron-forge make --platform=darwin",
     "make-linux": "electron-forge make --platform=linux"
+ 
   },
   "author": "eric",
   "license": "ISC",
@@ -25,4 +26,5 @@
     "electron-squirrel-startup": "^1.0.0",
     "yarn": "^1.22.19"
   }
+ 
 }
