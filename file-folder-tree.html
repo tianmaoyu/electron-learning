@@ -1,0 +1,49 @@
+<html>
+
+<body>
+    <div id="file-tree">
+        <ul id="root">
+            <li>
+                <i class="fas fa-folder"></i> 文件夹 1
+                <ul>
+                    <li>
+                        <i class="fas fa-file"></i> 文件 1-1
+                    </li>
+                    <li>
+                        <i class="fas fa-file"></i> 文件 1-2
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <i class="fas fa-folder"></i> 文件夹 2
+                <ul>
+                    <li>
+                        <i class="fas fa-file"></i> 文件 2-1
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+
+        window.onload = function () {
+            var tree = document.getElementById("file-tree");
+            var nodes = tree.getElementsByTagName("li");
+            for (var i = 0; i < nodes.length; i++) {
+                var node = nodes[i];
+                var childNode = node.querySelector("ul");
+                if (childNode) {
+                    node.addEventListener("click", (function (e) {
+                        this.classList.toggle("open");
+                        this.style.display = this.style.display === "none" ? "block" : "none";;
+                    }).bind(childNode));
+                } else {
+                    node.classList.add("file");
+                }
+            }
+        };
+
+    </script>
+</body>
+
+</html>

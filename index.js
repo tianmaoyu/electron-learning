@@ -26,6 +26,9 @@ app.whenReady().then(() => {
     console.info(template)
     const menu = Menu.buildFromTemplate(template);
     Menu.setApplicationMenu(menu);
+
+    //const oldMenu= Menu.getApplicationMenu();
+
 })
 
 app.on('window-all-closed', () => {
